@@ -13,10 +13,18 @@ published here as those sources require.
 
 ## Ne var burada / What's here
 
-| Dosya / File | Dil / Language | Madde / Entries |
-|---|---|---|
-| `tr_words.tsv` | Türkçe | 25.423 |
-| `en_words.tsv` | English | 32.059 |
+| Dosya / File | Dil / Language | Madde / Entries | Lisans / Licence |
+|---|---|---|---|
+| `tr_words.tsv` | Türkçe | 25.423 | CC BY-SA 4.0 |
+| `en_words.tsv` | English | 32.059 | CC BY-SA 4.0 |
+| `pt_words.tsv` | Português (BR) | 14.554 | CC BY-SA 4.0 **+ MPL-2.0 / LGPL-3.0** |
+
+**TR** · Portekizce tablo iki copyleft kaynaktan türedi ve bu yüzden
+**birleşik tek bir lisans iddia edilmiyor** — ayrıntı
+[`NOTICE.md`](NOTICE.md).
+
+**EN** · The Portuguese table derives from two copyleft sources, so no
+combined single licence is claimed for it — see [`NOTICE.md`](NOTICE.md).
 
 Sekmeyle ayrılmış, dört sütun. `#` ile başlayan satırlar açıklama.
 Tab-separated, four columns. Lines starting with `#` are comments.
