@@ -18,13 +18,24 @@ published here as those sources require.
 | `tr_words.tsv` | Türkçe | 25.423 | CC BY-SA 4.0 |
 | `en_words.tsv` | English | 32.059 | CC BY-SA 4.0 |
 | `pt_words.tsv` | Português (BR) | 14.554 | CC BY-SA 4.0 **+ MPL-2.0 / LGPL-3.0** |
+| `de_words.tsv` | Deutsch | 39.224 | CC BY-SA 4.0 |
 
 **TR** · Portekizce tablo iki copyleft kaynaktan türedi ve bu yüzden
 **birleşik tek bir lisans iddia edilmiyor** — ayrıntı
 [`NOTICE.md`](NOTICE.md).
 
+Almanca tabloda böyle bir soru yok: **iki kaynak da CC BY-SA 4.0**
+(Vikisözlük dökümü ve sıklık listesi), yani tablo doğrudan CC BY-SA 4.0
+altında ve ShareAlike koşulu tereddütsüz uygulanıyor. Almanca'da `ß`
+tabloda `ss` yazılı — oyunun harf sayımı böyle çalışıyor, ayrıntı
+[`NOTICE.md`](NOTICE.md).
+
 **EN** · The Portuguese table derives from two copyleft sources, so no
 combined single licence is claimed for it — see [`NOTICE.md`](NOTICE.md).
+The German table raises no such question: **both sources are CC BY-SA
+4.0**, so the table is CC BY-SA 4.0 and ShareAlike applies directly. In
+German, `ß` is written `ss` throughout — this is how the game counts
+letters.
 
 Sekmeyle ayrılmış, dört sütun. `#` ile başlayan satırlar açıklama.
 Tab-separated, four columns. Lines starting with `#` are comments.

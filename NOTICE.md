@@ -28,6 +28,8 @@ Kullanılan dosyalar / Files used:
 |---|---|
 | `content/2018/tr/tr_50k.txt` | `480192844e7fdfe9591bbf0b9cfbb96ed5751cfbba7024fd45d8cb7508e07d5c` |
 | `content/2018/en/en_50k.txt` | `5351ff405b1126ef555791dd4d9798a48e3e9a501a9fc481a9da957752cfb458` |
+| `content/2018/pt_br/pt_br_50k.txt` | `a61d6f2ede97c5daad5fb3907b72a228f0aff12668be6d24da590d20804fa611` |
+| `content/2018/de/de_50k.txt` | `d9e50546fd7e8b6fe6542a2b33c51d1331092b2a3916ec09f80d97856068705b` |
 
 **DEĞİŞTİRİLDİ Mİ? EVET / MODIFIED? YES.** Listeler olduğu gibi
 dağıtılmıyor: bağımsız bir sözlük kaynağıyla kesiştirildi, yalnız
@@ -101,6 +103,33 @@ obligation arises.
 
 ---
 
+## 5. Almanca sözlük / German lexicon — CC BY-SA 4.0
+
+**Vikisözlük (Almanca) dökümü / German Wiktionary dump** —
+`dewiktionary-latest-pages-articles.xml`
+https://dumps.wikimedia.org/dewiktionary/
+
+Telif / Copyright: Vikisözlük katkıcıları / Wiktionary contributors
+
+Lisans / Licence: **Creative Commons Attribution-ShareAlike 4.0
+International (CC BY-SA 4.0)**
+https://creativecommons.org/licenses/by-sa/4.0/
+
+| Dosya / File | SHA-256 |
+|---|---|
+| Ham döküm / raw dump | `5943e07bfb4a0db70924ffcd6a4466cd297ce4b41956638327abb17f92678f64` |
+| Süzülmüş / filtered (LF) | `c691d69be924c616b177c7c2fc86f3e606d1fd38c3ad0790d0e5576b8a1bfb27` |
+
+Süzme adımı ve neden `igerman98`in (GPL) seçilmediği
+`third_party/dewiktionary/PROVENANCE.md`'de yazılı. / The filtering step,
+and why `igerman98` (GPL) was not chosen, are recorded there.
+
+**DEĞİŞTİRİLDİ Mİ? EVET / MODIFIED? YES.** Sıklık listesiyle
+kesiştirildi, çekimli biçimler ve dil politikası uygulandı, `ß` gösterim
+biçiminde `ss` olarak yazıldı, sıra eklendi.
+
+---
+
 ## Lisansların birlikte durması / Licence interaction
 
 ### Türkçe ve İngilizce tablolar
@@ -140,6 +169,21 @@ contribution carries its own terms, as tabled above. Both licences point
 the same way — the derived data must remain available — and this
 repository satisfies that. How the two compose in one file is an open
 question left to legal review.
+
+### `de_words.tsv`: iki kaynak da CC BY-SA — yükümlülük EN AÇIK burada
+
+Almanca tablo **iki** CC BY-SA 4.0 kaynaktan türedi: sözlük de sıklık da.
+Portekizce'de sözlük tarafı MPL-2.0 olduğu için hangi lisansın geçerli
+olduğu açık bir soruydu; burada öyle bir soru yok — tablo **CC BY-SA
+4.0** altında ve ShareAlike koşulu doğrudan uygulanıyor.
+
+Bu, yayımlamanın bir tercih değil **yükümlülük** olduğu dil. MPL-2.0'ın
+"Larger Work" muafiyetinin CC BY-SA'da karşılığı yok.
+
+`de_words.tsv` derives from **two** CC BY-SA 4.0 sources — both the
+lexicon and the frequency list. Unlike the Portuguese table, there is no
+open licence-composition question here: the table is CC BY-SA 4.0 and
+ShareAlike applies directly. Publishing it is an obligation, not a choice.
 
 **Uygulamanın kendisi bu lisansların hiçbirine tabi değil** — CC BY-SA'nın
 ShareAlike koşulu uyarlanan materyale ait, onu içeren daha büyük işe
