@@ -30,6 +30,7 @@ Kullanılan dosyalar / Files used:
 | `content/2018/en/en_50k.txt` | `5351ff405b1126ef555791dd4d9798a48e3e9a501a9fc481a9da957752cfb458` |
 | `content/2018/pt_br/pt_br_50k.txt` | `a61d6f2ede97c5daad5fb3907b72a228f0aff12668be6d24da590d20804fa611` |
 | `content/2018/de/de_50k.txt` | `d9e50546fd7e8b6fe6542a2b33c51d1331092b2a3916ec09f80d97856068705b` |
+| `content/2018/es/es_50k.txt` | `dcff3ad4316192f4dc4ff7d26e637c6ff314ef1ca0f3f720c5649018a71056c0` |
 
 **DEĞİŞTİRİLDİ Mİ? EVET / MODIFIED? YES.** Listeler olduğu gibi
 dağıtılmıyor: bağımsız bir sözlük kaynağıyla kesiştirildi, yalnız
@@ -124,6 +125,45 @@ Süzme adımı ve neden `igerman98`in (GPL) seçilmediği
 `third_party/dewiktionary/PROVENANCE.md`'de yazılı. / The filtering step,
 and why `igerman98` (GPL) was not chosen, are recorded there.
 
+---
+
+## 6. İspanyolca sözlük / Spanish lexicon — MPL-2.0
+
+**RLA-ES** — Recursos Lingüísticos Abiertos del Español
+(`es_MX.dic`, LibreOffice/Apache OpenOffice İspanyolca sözlüğü s. 2.8)
+Dağıtım / Distribution:
+https://github.com/wooorm/dictionaries `dictionaries/es-MX`
+
+Telif / Copyright: Santiago Bosio ve İspanyolca topluluğu /
+Santiago Bosio and the Spanish-language community
+
+Kaynağın kendi lisans metni şunu diyor / The source's own licence states:
+
+> "Este diccionario … se distribuye bajo un triple esquema de licencias
+> disjuntas: GNU GPL versión 3 o posterior, GNU LGPL versión 3 o
+> posterior, **ó MPL versión 1.1 o posterior**. Puede seleccionar
+> libremente bajo cuál de estas licencias utilizará este diccionario."
+
+Seçim bize bırakılmış ve **MPL-2.0 seçildi** ("1.1 o posterior"
+MPL-2.0'ı kapsıyor). / The choice is left to the user; **MPL-2.0 is
+selected**.
+https://www.mozilla.org/MPL/2.0/
+
+| Dosya / File | SHA-256 |
+|---|---|
+| `es_MX.dic` | `bfb17f2e285505fbe7a2d8c1785906e7ed2cd7f6fd6182afb9d8ac0e7e16d202` |
+
+**Dağıtımın kendi lisansına DEĞİL, sözlüğün kendi beyanına bakıldı:**
+`wooorm/dictionaries` deposu MIT ama uyarısı aynen şu — *"this project
+itself is MIT, but each `index.dic` and `index.aff` file still has its
+original license!"* / The distribution's own MIT licence does **not**
+apply to the dictionary files; the source's own statement was read.
+
+**DEĞİŞTİRİLDİ Mİ? EVET / MODIFIED? YES.** Hunspell kök listesinden
+bayraklar ayıklandı, sıklık listesiyle kesiştirildi, özel adlar
+(2.664 kayıt) çıkarıldı, dil politikası uygulandı, aksanlı ünlüler
+katlandı (**`ñ` korundu** — ayrı harf), sıra eklendi.
+
 **DEĞİŞTİRİLDİ Mİ? EVET / MODIFIED? YES.** Sıklık listesiyle
 kesiştirildi, çekimli biçimler ve dil politikası uygulandı, `ß` gösterim
 biçiminde `ss` olarak yazıldı, sıra eklendi.
@@ -169,6 +209,26 @@ contribution carries its own terms, as tabled above. Both licences point
 the same way — the derived data must remain available — and this
 repository satisfies that. How the two compose in one file is an open
 question left to legal review.
+
+### `es_words.tsv`: Portekizce ile AYNI konum
+
+İspanyolca tablo da iki copyleft kaynaktan türedi: sözlük MPL-2.0
+(üçlü lisanstan seçildi), sıklık CC BY-SA 4.0. Portekizce'deki gibi
+**birleşik tek bir lisans iddia edilmiyor**; her katkı kendi şartlarını
+taşıyor.
+
+| Katkı | Kaynak | Lisans |
+|---|---|---|
+| Kelimelerin kendisi (geçerlilik) | RLA-ES `es_MX.dic` | MPL-2.0 |
+| Sıra ve bant (sıklık) | FrequencyWords | CC BY-SA 4.0 |
+
+MPL-2.0 §3.3 "Larger Work" maddesi uygulamanın kapalı kalmasına açıkça
+izin veriyor; kaynağın GPL seçeneği seçilseydi o muafiyet **olmazdı**.
+Seçim hakkı kaynağın kendi beyanında yazılı.
+
+`es_words.tsv` derives from two copyleft sources as well (lexicon
+MPL-2.0, frequency CC BY-SA 4.0), so no combined single licence is
+claimed. MPL-2.0 §3.3 expressly permits a Larger Work under other terms.
 
 ### `de_words.tsv`: iki kaynak da CC BY-SA — yükümlülük EN AÇIK burada
 

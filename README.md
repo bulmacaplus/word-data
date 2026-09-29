@@ -19,6 +19,7 @@ published here as those sources require.
 | `en_words.tsv` | English | 32.059 | CC BY-SA 4.0 |
 | `pt_words.tsv` | Português (BR) | 14.554 | CC BY-SA 4.0 **+ MPL-2.0 / LGPL-3.0** |
 | `de_words.tsv` | Deutsch | 39.224 | CC BY-SA 4.0 |
+| `es_words.tsv` | Español (MX) | 12.887 | CC BY-SA 4.0 **+ MPL-2.0** |
 
 **TR** · Portekizce tablo iki copyleft kaynaktan türedi ve bu yüzden
 **birleşik tek bir lisans iddia edilmiyor** — ayrıntı
@@ -30,8 +31,18 @@ altında ve ShareAlike koşulu tereddütsüz uygulanıyor. Almanca'da `ß`
 tabloda `ss` yazılı — oyunun harf sayımı böyle çalışıyor, ayrıntı
 [`NOTICE.md`](NOTICE.md).
 
+İspanyolca tablo aynı konumda (sözlük MPL-2.0, sıklık CC BY-SA 4.0).
+İspanyolca'da `ñ` **ayrı harf** ve katlanmadı; aksanlı ünlüler (`á é í
+ó ú`) katlandı çünkü ayrı harf değiller. Katlama ölçüldü: `ñ` de
+katlansaydı `año`/`ano`, `uña`/`una`, `caña`/`cana` gibi 17 çift
+birleşirdi.
+
 **EN** · The Portuguese table derives from two copyleft sources, so no
 combined single licence is claimed for it — see [`NOTICE.md`](NOTICE.md).
+The Spanish table is in the same position. In Spanish, `ñ` is a
+**separate letter** and is preserved; accented vowels are folded, since
+they are not separate letters. Folding `ñ` would have merged 17 genuine
+pairs (`año`/`ano`, `uña`/`una`, `caña`/`cana`).
 The German table raises no such question: **both sources are CC BY-SA
 4.0**, so the table is CC BY-SA 4.0 and ShareAlike applies directly. In
 German, `ß` is written `ss` throughout — this is how the game counts
