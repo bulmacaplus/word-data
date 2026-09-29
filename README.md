@@ -20,6 +20,7 @@ published here as those sources require.
 | `pt_words.tsv` | Português (BR) | 14.554 | CC BY-SA 4.0 **+ MPL-2.0 / LGPL-3.0** |
 | `de_words.tsv` | Deutsch | 39.224 | CC BY-SA 4.0 |
 | `es_words.tsv` | Español (MX) | 12.887 | CC BY-SA 4.0 **+ MPL-2.0** |
+| `id_words.tsv` | Bahasa Indonesia | 19.158 | CC BY-SA 4.0 |
 
 **TR** · Portekizce tablo iki copyleft kaynaktan türedi ve bu yüzden
 **birleşik tek bir lisans iddia edilmiyor** — ayrıntı
@@ -37,6 +38,14 @@ tabloda `ss` yazılı — oyunun harf sayımı böyle çalışıyor, ayrıntı
 katlansaydı `año`/`ano`, `uña`/`una`, `caña`/`cana` gibi 17 çift
 birleşirdi.
 
+Endonezyaca tablo Almanca ile aynı konumda: **iki kaynak da CC BY-SA
+4.0** (Vikisözlük dökümü ve sıklık listesi). Endonezyaca **saf A–Z**
+yazılıyor, katlanacak hiçbir harf yok. Tabloda **İKİLEME yok**:
+`anak-anak`, `kupu-kupu` gibi gerçek kelimeler kısa çizgi taşıdığı için
+oyunda oynanamaz, yalnız tekil biçimleri var. Öbür aday `hunspell-id`
+**LGPL-3.0-only** olduğu için seçilmedi; gerekçe
+[`NOTICE.md`](NOTICE.md).
+
 **EN** · The Portuguese table derives from two copyleft sources, so no
 combined single licence is claimed for it — see [`NOTICE.md`](NOTICE.md).
 The Spanish table is in the same position. In Spanish, `ñ` is a
@@ -47,6 +56,12 @@ The German table raises no such question: **both sources are CC BY-SA
 4.0**, so the table is CC BY-SA 4.0 and ShareAlike applies directly. In
 German, `ß` is written `ss` throughout — this is how the game counts
 letters.
+The Indonesian table is in the same position as the German one (both
+sources CC BY-SA 4.0). Indonesian is written in plain A–Z, so nothing is
+folded, and reduplicated forms (`anak-anak`, `kupu-kupu`) are absent: the
+hyphen is not a playable letter, so only the singular forms are kept.
+The alternative source `hunspell-id` was rejected for being
+LGPL-3.0-only — see [`NOTICE.md`](NOTICE.md).
 
 Sekmeyle ayrılmış, dört sütun. `#` ile başlayan satırlar açıklama.
 Tab-separated, four columns. Lines starting with `#` are comments.

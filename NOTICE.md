@@ -31,6 +31,7 @@ Kullanılan dosyalar / Files used:
 | `content/2018/pt_br/pt_br_50k.txt` | `a61d6f2ede97c5daad5fb3907b72a228f0aff12668be6d24da590d20804fa611` |
 | `content/2018/de/de_50k.txt` | `d9e50546fd7e8b6fe6542a2b33c51d1331092b2a3916ec09f80d97856068705b` |
 | `content/2018/es/es_50k.txt` | `dcff3ad4316192f4dc4ff7d26e637c6ff314ef1ca0f3f720c5649018a71056c0` |
+| `content/2018/id/id_50k.txt` | `f2eea0da9735b7040efbfa813f5f875ec931de5a0ec70a6f28213ea60a87bb38` |
 
 **DEĞİŞTİRİLDİ Mİ? EVET / MODIFIED? YES.** Listeler olduğu gibi
 dağıtılmıyor: bağımsız bir sözlük kaynağıyla kesiştirildi, yalnız
@@ -170,6 +171,34 @@ biçiminde `ss` olarak yazıldı, sıra eklendi.
 
 ---
 
+## 7. Endonezyaca sözlük / Indonesian lexicon — CC BY-SA 4.0
+
+**Vikisözlük (Endonezyaca) dökümü / Indonesian Wiktionary dump** —
+`idwiktionary-latest-pages-articles.xml`
+https://dumps.wikimedia.org/idwiktionary/
+
+Telif / Copyright: Vikisözlük katkıcıları / Wiktionary contributors
+
+Lisans / Licence: **Creative Commons Attribution-ShareAlike 4.0
+International (CC BY-SA 4.0)**
+https://creativecommons.org/licenses/by-sa/4.0/
+
+| Dosya / File | SHA-256 |
+|---|---|
+| Ham döküm / raw dump | `50315223b35894d89ad503e2913ac633896700cfe2fdbfeb045c16bda2bcd761` |
+| Süzülmüş / filtered (LF) | `21dde998b94964f001b521413af81c9ec8638d07363c5824ab02e8b81ccb9065` |
+
+Süzme adımı ve neden `shuLhan/hunspell-id`in (**LGPL-3.0-only**)
+seçilmediği `third_party/idwiktionary/PROVENANCE.md`'de yazılı: LGPL
+§4(d) kullanıcının kütüphaneyi değiştirilmiş bir sürümle
+DEĞİŞTİREBİLMESİNİ şart koşuyor ve pakete gömülü bir veri dosyası için
+bu sağlanamaz. / The filtering step, and why `shuLhan/hunspell-id`
+(LGPL-3.0-only) was not chosen, are recorded there: LGPL §4(d) requires
+that the user be able to replace the library with a modified version,
+which a bundled data file cannot satisfy.
+
+---
+
 ## Lisansların birlikte durması / Licence interaction
 
 ### Türkçe ve İngilizce tablolar
@@ -244,6 +273,22 @@ Bu, yayımlamanın bir tercih değil **yükümlülük** olduğu dil. MPL-2.0'ın
 lexicon and the frequency list. Unlike the Portuguese table, there is no
 open licence-composition question here: the table is CC BY-SA 4.0 and
 ShareAlike applies directly. Publishing it is an obligation, not a choice.
+
+### `id_words.tsv`: Almanca ile AYNI konum, ayrıca İKİLEME yok
+
+Endonezyaca tablo da **iki** CC BY-SA 4.0 kaynaktan türedi — Vikisözlük
+dökümü ve sıklık listesi — yani tablo doğrudan CC BY-SA 4.0 altında.
+Burada da yayımlamak bir tercih değil **yükümlülük**.
+
+Bir de yazımla ilgili not: tabloda **ikileme biçimi yok**. `anak-anak`
+(çocuklar), `kupu-kupu` (kelebek), `ubur-ubur` (denizanası) gerçek
+Endonezyaca kelimeler ama kısa çizgi oyunun oynanabilir harf kümesinde
+değil; o maddeler ızgarada hiç görünemezdi. Yalnız tekil biçimler var.
+
+`id_words.tsv` derives from **two** CC BY-SA 4.0 sources as well, so the
+table is CC BY-SA 4.0 and publishing it is an obligation. Note on
+orthography: reduplicated forms (`anak-anak`, `kupu-kupu`) are absent —
+the hyphen is not a playable letter, so only singular forms are kept.
 
 **Uygulamanın kendisi bu lisansların hiçbirine tabi değil** — CC BY-SA'nın
 ShareAlike koşulu uyarlanan materyale ait, onu içeren daha büyük işe
