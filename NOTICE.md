@@ -199,6 +199,38 @@ which a bundled data file cannot satisfy.
 
 ---
 
+## 8. Hintçe sözlük / Hindi lexicon — CC BY-SA 4.0
+
+**en.wiktionary `Category:Hindi lemmas`** — madde başlıkları / category
+member titles
+https://en.wiktionary.org/wiki/Category:Hindi_lemmas
+
+Telif / Copyright: Vikisözlük katkıcıları / Wiktionary contributors
+
+Lisans / Licence: **Creative Commons Attribution-ShareAlike 4.0
+International (CC BY-SA 4.0)**
+https://creativecommons.org/licenses/by-sa/4.0/
+
+| Dosya / File | SHA-256 |
+|---|---|
+| `hi_lemmas.txt` (LF) | `11d5b259c977e5ca099912dd7175fd6b4cdc7782d17a9d032a4f9cc6a68e2f9d` |
+
+Öbür dillerde kaynak o dilin **kendi** Vikisözlüğünün dökümüdür;
+Hintçe'de **en.wiktionary** kategorisi kullanıldı ve bu ölçülmüş bir
+karar: bir dilin kendi Vikisözlüğü çoğunlukla yabancı kelimelerin
+sözlüğüdür (Tagalogca dökümünde 24.765 başlığın 20.332'si yabancı dil
+maddesiydi). Kayıt: `third_party/enwiktionary_hi/PROVENANCE.md`. / For
+other languages the source is that language's own Wiktionary dump; for
+Hindi the en.wiktionary category was used — a measured decision
+recorded in that file.
+
+Sıklık kaynağı `hi_full.txt`, öbür dillerdeki `<kod>_50k.txt` değil:
+2018 dizininde Hintçe için öyle bir dosya yok. / The frequency source is
+`hi_full.txt`, not a `_50k` file — none exists for Hindi in the 2018
+directory.
+
+---
+
 ## Lisansların birlikte durması / Licence interaction
 
 ### Türkçe ve İngilizce tablolar
@@ -273,6 +305,26 @@ Bu, yayımlamanın bir tercih değil **yükümlülük** olduğu dil. MPL-2.0'ın
 lexicon and the frequency list. Unlike the Portuguese table, there is no
 open licence-composition question here: the table is CC BY-SA 4.0 and
 ShareAlike applies directly. Publishing it is an obligation, not a choice.
+
+### `hi_words.tsv`: Almanca ile AYNI konum — iki kaynak da CC BY-SA
+
+Hintçe tablo da **iki** CC BY-SA 4.0 kaynaktan türedi — en.wiktionary
+kategorisi ve sıklık listesi — yani tablo doğrudan CC BY-SA 4.0 altında.
+Birleşik tek bir lisans iddia EDİLMİYOR. / The Hindi table derives from
+two CC BY-SA 4.0 sources, so it is CC BY-SA 4.0; no combined single
+licence is claimed.
+
+**Bu tablo oyuncu Hintçe'yi seçemezken de yayımlanıyor.** Sözlük
+`assets/kelime_bagla/` dizini üzerinden **pakete giriyor**, yani
+uygulama yayınlandığı anda veri de dağıtılmış olacak. ShareAlike koşulu
+kayda değil **dağıtıma** bağlı; tablo o yüzden önceden hazırlanıyor.
+(Uygulama bu kaydın yazıldığı tarihte henüz yayınlanmadı, yani
+yükümlülük doğmuş değil — hazırlık bilinçli.) / This table is published
+even though players cannot yet select Hindi: the dictionary ships inside
+the app bundle, so the data will be distributed the moment the app is
+released. ShareAlike follows distribution, not registration; the table is
+therefore prepared in advance. (At the time of writing the app has not
+been released, so the obligation has not yet arisen.)
 
 ### `id_words.tsv`: Almanca ile AYNI konum, ayrıca İKİLEME yok
 
